@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q7G-9j-AIz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AfX-kc-fkj">
+            <objects>
+                <navigationController id="Q7G-9j-AIz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uxg-fZ-hgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ssx-LN-vOw" kind="relationship" relationship="rootViewController" id="nHH-px-07c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jH-7N-1PY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-128"/>
+        </scene>
+        <!--小视频-->
+        <scene sceneID="bAM-OU-SGw">
+            <objects>
+                <viewController id="Ssx-LN-vOw" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bXQ-c2-PP5"/>
+                        <viewControllerLayoutGuide type="bottom" id="nHL-8u-b7P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Li5-m5-xmN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXz-6j-HuZ">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ma-lc-ChP">
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.66274509800000003" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="bkv-mg-CMP"/>
+                                            <constraint firstAttribute="width" constant="70" id="puv-lV-Kfu"/>
+                                        </constraints>
+                                        <state key="normal" title="小视频"/>
+                                        <connections>
+                                            <action selector="VideoClick:" destination="Ssx-LN-vOw" eventType="touchUpInside" id="bmH-0J-0ka"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="603" id="8P7-LH-QSV"/>
+                                    <constraint firstItem="6ma-lc-ChP" firstAttribute="top" secondItem="BXz-6j-HuZ" secondAttribute="top" constant="286" id="I8C-I9-9gX"/>
+                                    <constraint firstAttribute="width" constant="375" id="Zvr-L6-TDj"/>
+                                    <constraint firstItem="6ma-lc-ChP" firstAttribute="leading" secondItem="BXz-6j-HuZ" secondAttribute="leading" constant="152" id="piv-Vg-Zd0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nHL-8u-b7P" firstAttribute="top" secondItem="BXz-6j-HuZ" secondAttribute="bottom" id="B6f-t6-USc"/>
+                            <constraint firstItem="BXz-6j-HuZ" firstAttribute="top" secondItem="bXQ-c2-PP5" secondAttribute="bottom" id="e0i-xt-EUR"/>
+                            <constraint firstItem="BXz-6j-HuZ" firstAttribute="leading" secondItem="Li5-m5-xmN" secondAttribute="leading" id="il4-QG-0gX"/>
+                            <constraint firstAttribute="trailing" secondItem="BXz-6j-HuZ" secondAttribute="trailing" id="kAD-UC-yN3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="小视频" id="skt-0n-PeX"/>
+                    <connections>
+                        <outlet property="ViewLeftConstant" destination="piv-Vg-Zd0" id="LZi-VH-aRG"/>
+                        <outlet property="ViewTopConstant" destination="I8C-I9-9gX" id="jH7-pd-jlw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14d-5C-f0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="-192"/>
+        </scene>
+    </scenes>
+</document>
