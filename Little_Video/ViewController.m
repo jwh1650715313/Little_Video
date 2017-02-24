@@ -1,7 +1,7 @@
 //
 //  ViewController.m
 //  Little_Video
-//
+//  GitHub地址:https://github.com/jwh1650715313/Little_Video
 //  Created by JIng on 2017/2/24.
 //  Copyright © 2017年 JIng. All rights reserved.
 //
@@ -28,6 +28,7 @@
     
     _ViewTopConstant.constant=(ScreenHeight-30)/2;
     _ViewLeftConstant.constant=(ScreenWidth-70)/2;
+    
     
     
     
