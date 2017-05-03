@@ -281,7 +281,6 @@
     
     UIButton  *Btn=(UIButton *)sender;
     Btn.selected=!Btn.selected;
-
     //根据设备输出获得连接
     AVCaptureConnection *captureConnection=[self.captureMovieFileOutput connectionWithMediaType:AVMediaTypeVideo];
     //根据连接取得设备输出的数据
